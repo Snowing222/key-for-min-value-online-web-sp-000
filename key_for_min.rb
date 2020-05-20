@@ -3,7 +3,11 @@
 
 def key_for_min_value(name_hash)
   small_num=""
-  name_hash.each do |key,number|
+  if name_hash={}
+    return nil
+
+  else
+    name_hash.each do |key,number|
     if number<small_num || small_number=""
       small_num=number
       return key
